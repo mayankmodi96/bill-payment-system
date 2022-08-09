@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="client1_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+     <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- start header -->
+<div id="header">
+	<h1><a href="#">Bill payment</a></h1>
+	<p><a href=""></a></p>
+</div>
+<!-- end header -->
+<!-- star menu -->
+<div id="menu">
+	<ul>
+		<li class=""><a href="Home.aspx">Home</a></li>
+		<li><a href="purchase.aspx">Purchase Details</a></li>
+		<li><a href="sales.aspx">Sales Details</a></li>
+		<li><a href="contactus.aspx">Contact us</a></li>
+		<li><a href="logout.aspx">logout</a></li>
+	</ul>
+</div>
+<!-- end menu -->
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<ul>
+					<li><a href=""></a>
+                    </li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<div id="extra" style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<!-- start footer -->
+<div id="footer">
+	<p class="legal"> ©2014 Bill Payment of Mall All Rights Reserved&nbsp;<a href="">
+   </a> </p>
+</div></form>
+</body>
+</html>
